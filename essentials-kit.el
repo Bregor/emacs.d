@@ -4,6 +4,9 @@
 ;; Save a list of recent files visited.
 (recentf-mode 1)
 
+;; If non-nil, `kill-line' with no arg at beg of line kills the whole line.
+(setq kill-whole-line t)
+
 ;; whenever an external process changes a file underneath emacs, and there
 ;; was no unsaved changes in the corresponding buffer, just revert its
 ;; content to reflect what's on-disk.
@@ -21,6 +24,5 @@
       (find-file file))))
 
 (global-set-key (kbd "C-x f") 'recentf-ido-find-file)
-;; (global-set-key (kbd "C-k") 'kill-whole-line)
 
 (provide 'essentials-kit)
