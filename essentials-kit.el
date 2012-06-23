@@ -13,6 +13,9 @@
 (global-auto-revert-mode 1)
 
 (global-set-key (kbd "C-x C-b") 'ibuffer)
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "C-c r") 'revert-buffer)
+
 (setq file-name-coding-system 'utf-8)
 
 
