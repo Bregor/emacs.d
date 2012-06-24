@@ -18,6 +18,8 @@
 
 (setq file-name-coding-system 'utf-8)
 
+(require 'bar-cursor)
+(bar-cursor-mode)
 
 (defun recentf-ido-find-file ()
   "Find a recent file using ido."

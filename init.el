@@ -11,9 +11,6 @@
 (add-to-list 'load-path "~/.emacs.d")
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
-(require 'bar-cursor)
-(bar-cursor-mode)
-
 (unless (require 'el-get nil t)
   (setq el-get-install-branch "master")
   (with-current-buffer
