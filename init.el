@@ -28,7 +28,7 @@
 (require 'essentials-kit)
 (require 'ruby-kit)
 (require 'apple-kit)
-
+(require 'org-kit)
 
 ;;;;; Tramp settings
 ;; Sudo via SSH
