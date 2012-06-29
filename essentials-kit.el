@@ -20,9 +20,10 @@
 
 (setq file-name-coding-system 'utf-8)
 
+(setq confirm-kill-emacs 'yes-or-no-p) ;; Ask for confirmation when leaving Emacs
+
 (require 'bar-cursor)
 (bar-cursor-mode)
-
 (defun recentf-ido-find-file ()
   "Find a recent file using ido."
   (interactive)
