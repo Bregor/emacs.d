@@ -17,6 +17,7 @@
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "C-c r") 'revert-buffer)
+(global-unset-key (kbd "C-z"))
 
 (setq file-name-coding-system 'utf-8)
 
