@@ -23,6 +23,8 @@
 
 (setq confirm-kill-emacs 'yes-or-no-p) ;; Ask for confirmation when leaving Emacs
 
+(setq frame-title-format '(buffer-file-name "%f" ("%b"))) ;; set the title bar to show file name if available, buffer name otherwise
+
 (require 'bar-cursor)
 (bar-cursor-mode)
 (defun recentf-ido-find-file ()
