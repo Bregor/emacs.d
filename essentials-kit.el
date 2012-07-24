@@ -1,3 +1,6 @@
+;; Use IDO if installed
+(if (fboundp 'ido-mode) (ido-mode 1))
+
 ;; Highlight matching parentheses when the point is on them.
 (show-paren-mode 1)
 
