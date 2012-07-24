@@ -30,6 +30,7 @@
 (require 'ruby-kit)
 (require 'apple-kit)
 (require 'org-kit)
+(require 'erlang-kit)
 
 ;;;;; Tramp settings
 ;; Sudo via SSH
