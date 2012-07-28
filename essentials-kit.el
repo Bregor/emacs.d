@@ -15,6 +15,10 @@
 ;; content to reflect what's on-disk.
 (global-auto-revert-mode 1)
 
+;; Use readable buffer designations when names are the same
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'post-forward)
+
 (setq exec-path (quote ("/usr/local/bin" "/usr/local/sbin" "/usr/bin" "/bin" "/usr/sbin" "/sbin" "/Applications/Emacs.app/Contents/MacOS/bin")))
 
 (global-set-key (kbd "C-x C-b") 'ibuffer)
