@@ -31,6 +31,7 @@
 (require 'apple-kit)
 (require 'org-kit)
 (require 'erlang-kit)
+(require 'debian-kit)
 
 ;;;;; Tramp settings
 ;; Sudo via SSH
