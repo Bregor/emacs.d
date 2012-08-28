@@ -32,6 +32,7 @@
 (require 'org-kit)
 (require 'erlang-kit)
 (require 'debian-kit)
+(require 'russian-kit)
 
 ;;;;; Tramp settings
 ;; Sudo via SSH
