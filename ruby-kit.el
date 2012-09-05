@@ -20,4 +20,12 @@
 ;; We never want to edit Rubinius bytecode
 (add-to-list 'completion-ignored-extensions ".rbc")
 
+;; Safe local variables
+(setq safe-local-variable-values (quote ((encoding . utf-8)
+					  (ruby-compilation-executable . "ruby")
+					  (ruby-compilation-executable . "ruby1.8")
+					  (ruby-compilation-executable . "ruby1.9")
+					  (ruby-compilation-executable . "rbx")
+					  (ruby-compilation-executable . "jruby"))))
+
 (provide 'ruby-kit)
