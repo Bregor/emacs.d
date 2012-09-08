@@ -103,7 +103,10 @@
  ("M" ?Ь)
  ("<" ?Б)
  (">" ?Ю)
- ("?" ??))
+ ("?" ??)
+ ("§" ?<)
+ ("±" ?>)
+)
 
 (global-set-key (kbd "M-2") '(lambda() (interactive) (insert "@")))
 (global-set-key (kbd "M-3") '(lambda() (interactive) (insert "#")))
@@ -112,6 +115,7 @@
 (global-set-key (kbd "M-6") '(lambda() (interactive) (insert "^")))
 (global-set-key (kbd "M-7") '(lambda() (interactive) (insert "&")))
 (global-set-key (kbd "M-8") '(lambda() (interactive) (insert "*")))
+(global-set-key (kbd "M--") '(lambda() (interactive) (insert "—")))
 
 ;; Local Variables:
 ;; coding: utf-8

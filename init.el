@@ -7,6 +7,7 @@
 (setq visible-bell t) ; no beeps please
 (line-number-mode 1)	; have line numbers and
 (column-number-mode 1)	; column numbers in the mode line
+(delete-selection-mode 1) ; delete selected block when start typing
 
 (add-to-list 'load-path "~/.emacs.d")
 (add-to-list 'load-path "~/.emacs.d/vendor")
