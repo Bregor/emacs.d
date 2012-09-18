@@ -9,7 +9,7 @@ Place `treetop-mode.el` on Emacs' load-path, or update your `.emacs` with e.g. `
 
 ### Thanks
 
-Thansk to the authors of the [EmacsWiki](http://www.emacswiki.org) pages [here](http://emacswiki.org/emacs/ModeTutorial) and [here](http://www.emacswiki.org/emacs/DerivedMode), and to folks behind [Treetop](http://treetop.rubyforge.org).
+Thansk to the authors of the [EmacsWiki](http://www.emacswiki.org) pages [here](http://emacswiki.org/emacs/ModeTutorial) and [here](http://www.emacswiki.org/emacs/DerivedMode), and to the folks behind [Treetop](http://treetop.rubyforge.org).
 
 ### License
 
