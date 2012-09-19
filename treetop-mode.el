@@ -17,7 +17,7 @@
 (define-generic-mode 'treetop-mode-base
   '("#")
   '("end" "grammar" "rule")
-  '(("<.+>\\s-*$" . 'font-lock-variable-name-face)
+  '(("\\(<.+>\\)\\s-*\/?\\s-*$" 1 'font-lock-variable-name-face)
     ("rule\\s-+\\([A-Za-z_][A-Za-z0-9_]*\\)\\s-*$" 1 'font-lock-function-name-face) 
     ("grammar\\s-+\\([A-Za-z_][A-Za-z0-9_]*\\)\\s-*$" 1 'font-lock-type-face)
     ("[^\\]'[^']*[^\\]'" . 'font-lock-string-face))
