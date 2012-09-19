@@ -25,9 +25,9 @@
   nil
   "A base mode for Treetop grammar files")
 
-(defun end     () (looking-at "^\\s-*end\\b"))
-(defun grammar () (looking-at "^\\s-*grammar\\b"))
-(defun rule    () (looking-at "^\\s-*rule\\b"))
+(defun end     () (looking-at "^\\s-*end[^A-Za-z0-9_]"))
+(defun grammar () (looking-at "^\\s-*grammar[^A-Za-z0-9_]"))
+(defun rule    () (looking-at "^\\s-*rule[^A-Za-z0-9_]"))
 
 (defun set-indent (iend irule igrammar)
   (let ((searching t))
