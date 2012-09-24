@@ -21,10 +21,14 @@
 
 (setq exec-path (quote ("/usr/local/bin" "/usr/local/sbin" "/usr/bin" "/bin" "/usr/sbin" "/sbin" "/Applications/Emacs.app/Contents/MacOS/bin")))
 
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "C-c r") 'revert-buffer)
 (global-unset-key (kbd "C-z"))
+(global-set-key (kbd "C-x f") 'recentf-ido-find-file)
+(global-set-key (kbd "C-*") 'mc/mark-all-like-this) ;; needs mark-multiple (M-x el-get-install RET multiple-cursors RET)
 
 (setq file-name-coding-system 'utf-8)
 
@@ -41,6 +45,6 @@
     (when file
       (find-file file))))
 
-(global-set-key (kbd "C-x f") 'recentf-ido-find-file)
+(add-to-list 'auto-mode-alist '("\\rfc\\[0-9\\]+.txt$" . irfc-mode))
 
 (provide 'essentials-kit)
