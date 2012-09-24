@@ -34,6 +34,7 @@
 (require 'erlang-kit)
 (require 'debian-kit)
 (require 'russian-kit)
+(require 'browser-kit)
 
 ;;;;; Tramp settings
 ;; Sudo via SSH
