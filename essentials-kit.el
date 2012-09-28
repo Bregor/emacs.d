@@ -46,6 +46,6 @@
     (when file
       (find-file file))))
 
-(add-to-list 'auto-mode-alist '("\\rfc\\[0-9\\]+.txt$" . irfc-mode))
+(add-to-list 'auto-mode-alist '("\\rfc[0-9]+.txt$" . irfc-mode))
 
 (provide 'essentials-kit)
