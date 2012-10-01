@@ -16,10 +16,11 @@
 
 (define-generic-mode 'treetop-mode-base
   '("#")
-  '("end" "grammar" "rule")
+  '("end" "include" "grammar" "require" "rule")
   '(("\\(<[A-Za-z0-9_]+>\\)" 1 'font-lock-variable-name-face)
     ("rule\\s-+\\([A-Za-z_][A-Za-z0-9_]*\\)\\s-*$" 1 'font-lock-function-name-face) 
     ("grammar\\s-+\\([A-Za-z_][A-Za-z0-9_]*\\)\\s-*$" 1 'font-lock-type-face)
+    ("include\\s-+\\(.+\\)" 1 'font-lock-variable-name-face)
     ("[^\\]'[^']*[^\\]'" . 'font-lock-string-face))
   nil
   nil
