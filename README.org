@@ -1,0 +1,32 @@
+#+TITLE: Emacs configuration for everyday usage
+#+OPTIONS: toc:t num:nil email:t \n:t
+#+EMAIL: pipopolam@gmail.com
+
+** Disclaimer:
+   Just a configuration bundle for emacs on OS X.
+   Should work on linux with no improvements but with Inconsolata font installed.
+** Installation
+*** Prerequisites
+    - I assume, you already have a human-like operating system and Emacs (version 24) installed.
+    - Install [[http://www.levien.com/type/myfonts/inconsolata.html][Inconsolata font]].
+    - Create some useful directories:
+#+BEGIN_SRC shell-script
+$ mkdir -p ~/Dropbox/MobileOrg ~/Documents/org/agenda
+#+END_SRC
+*** Bundle itself
+#+BEGIN_SRC shell-script
+$ git clone git://github.com/Bregor/emacs.d ~/.emacs.d
+#+END_SRC
+Restart your Emacs and do the following (ignore errors for now):
+#+BEGIN_SRC emacs-lisp
+M-x el-get install smex
+M-x el-get install color-theme-twilight
+M-x el-get install textmate
+M-x el-get install org-mode
+#+END_SRC
+Restart your Emacs again and try to be happy.
+
+** Usage
+   Hey, I'm not going to teach you how to use Emacs, I just gave you a configuration bundle!
+** Agenda
+   Put your agenda files to =~/Documents/org/agenda/= with extension =.org=. E.g. =work.org=
