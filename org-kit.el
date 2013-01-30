@@ -15,6 +15,9 @@
 			  (sequence "|" "CANCELLED(l)")))
 (setq org-fast-tag-selection-include-todo t)
 
+;; Allow binding of lisp variables w/o permanent asking
+(setq org-export-allow-BIND t)
+
 (setq org-clock-persist t)
 (org-clock-persistence-insinuate)
 
