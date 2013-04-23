@@ -37,6 +37,8 @@
 
 (setq frame-title-format '(buffer-file-name "%f" ("%b"))) ;; set the title bar to show file name if available, buffer name otherwise
 
+(setq backup-directory-alist `(("." . ,(concat user-emacs-directory "backups")))) ; Backups are stored inside user-emacs-directory. (Usually ~/.emacs.d)
+
 (require 'bar-cursor)
 (bar-cursor-mode)
 (defun recentf-ido-find-file ()
