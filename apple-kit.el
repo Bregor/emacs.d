@@ -5,6 +5,16 @@
   (global-set-key [(backtab)] 'hippie-expand)
   (global-set-key [s-right] 'move-end-of-line)
   (global-set-key [s-left] 'move-beginning-of-line)
-  (global-set-key (kbd "M-SPC") 'set-mark-command))
+  (global-set-key (kbd "M-SPC") 'set-mark-command)
+
+  ;; Get environment variables properly
+  (exec-path-from-shell-initialize)
+  (exec-path-from-shell-copy-env "EDITOR")
+  (exec-path-from-shell-copy-env "LANG")
+  (exec-path-from-shell-copy-env "LC_COLLATE")
+  (exec-path-from-shell-copy-env "INFOPATH")
+  (exec-path-from-shell-copy-env "HOMEBREW_KEEP_INFO")
+
+)
 
 (provide 'apple-kit)
