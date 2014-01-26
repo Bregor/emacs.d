@@ -27,6 +27,7 @@
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+(require 'packages-kit)
 (require 'essentials-kit)
 (require 'ruby-kit)
 (require 'apple-kit)
