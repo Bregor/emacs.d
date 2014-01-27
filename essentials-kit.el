@@ -35,9 +35,11 @@
 
 (setq confirm-kill-emacs 'yes-or-no-p) ;; Ask for confirmation when leaving Emacs
 
-(setq frame-title-format '(buffer-file-name "%f" ("%b"))) ;; set the title bar to show file name if available, buffer name otherwise
+;; set the title bar to show file name if available, buffer name otherwise
+(setq frame-title-format '(buffer-file-name "%f" ("%b")))
 
-(setq backup-directory-alist `(("." . ,(concat user-emacs-directory "backups")))) ; Backups are stored inside user-emacs-directory. (Usually ~/.emacs.d)
+;; Backups are stored inside user-emacs-directory. (Usually ~/.emacs.d)
+(setq backup-directory-alist `(("." . ,(concat user-emacs-directory "backups"))))
 
 (require 'bar-cursor)
 (bar-cursor-mode)
