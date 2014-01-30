@@ -6,9 +6,13 @@
      (add-hook 'ruby-mode-hook 'inf-ruby-setup-keybindings)
      (add-hook 'ruby-mode-hook
 	       (lambda () (ruby-electric-mode t)))
+     (require 'rcodetools)
+     (rvm-use-default)
+     (fset 'run-xmp [?\M-\; ?\M-\; ?\M-x ?x ?m ?p return])
      (define-key ruby-mode-map (kbd "RET") 'reindent-then-newline-and-indent)
      (define-key ruby-mode-map (kbd "C-M-h") 'backward-kill-word)
-     (define-key ruby-mode-map (kbd "C-c l") "lambda")))
+     (define-key ruby-mode-map (kbd "C-c l") "lambda")
+     (define-key ruby-mode-map (kbd "C-c C-c") 'run-xmp)))
 
 ;; Rake files are ruby, too, as are gemspecs, rackup files, etc.
 (add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))

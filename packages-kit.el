@@ -33,6 +33,7 @@
 	ruby-compilation
 	ruby-electric
 	rvm
+	rcodetools
 	sass-mode
 	scss-mode
 	smart-operator
