@@ -30,7 +30,6 @@
 	puppet-mode
 	request
 	rspec-mode
-	ruby-compilation
 	ruby-electric
 	rvm
 	rcodetools
