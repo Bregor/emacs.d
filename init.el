@@ -9,7 +9,7 @@
 (column-number-mode 1)	; column numbers in the mode line
 (delete-selection-mode 1) ; delete selected block when start typing
 
-(add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'load-path "~/.emacs.d/lisp")
 (add-to-list 'load-path "~/.emacs.d/vendor")
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
@@ -24,7 +24,7 @@
 (el-get 'sync)
 
 (color-theme-twilight)
-
+;;(load-theme 'twilight-anti-bright-theme)
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (require 'packages-kit)
@@ -42,3 +42,16 @@
 (set-default 'tramp-default-proxies-alist (quote ((".*" "\\`root\\'" "/ssh:%h:"))))
 
 (server-start)
+(setenv "TMPDIR" "/tmp")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes (quote ("159bb8f86836ea30261ece64ac695dc490e871d57107016c09f286146f0dae64" "03f28a4e25d3ce7e8826b0a67441826c744cbf47077fb5bc9ddb18afe115005f" default))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

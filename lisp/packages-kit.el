@@ -1,7 +1,6 @@
 (setq my:el-get-packages
       '(el-get
 	smex
-	color-theme-twilight
 	egg
 	org-mode
 	ido-ubiquitous
